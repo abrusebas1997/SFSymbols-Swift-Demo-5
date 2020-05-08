@@ -13,7 +13,7 @@ struct ContentView: View {
         HStack {
             Image(systemName: "mic.circle.fill")
             Text("Like")
-        }
+        }.font(.largeTitle)
     }
 }
 
