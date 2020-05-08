@@ -25,13 +25,21 @@ struct ContentView: View {
                 HStack {
                     Image(systemName: "star.fill")
                         .foregroundColor(.yellow)
-                        .font(.system(size: 40))
                     
                     Text("SwiftUI Slots")
+                        .bold()
+                        .foregroundColor(.white)
                     Image(systemName: "star.fill")
                     .foregroundColor(.yellow)
-                    .font(.system(size: 40))
-                }
+                }.scaleEffect(2)
+                
+//                Credits counter
+                Text("Credits:1000")
+                    .foregroundColor(.black)
+                    .padding(.all, 10)
+                    .background(Color.white.opacity(0.5))
+                    .cornerRadius(20)
+                    
             }
         }
     }
