@@ -20,6 +20,19 @@ struct ContentView: View {
                 .foregroundColor(Color(red:228/255, green: 195/255, blue: 76/255))
             .rotationEffect(Angle(degrees: 45))
                 .edgesIgnoringSafeArea(.all)
+            VStack{
+                //title
+                HStack {
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                        .font(.system(size: 40))
+                    
+                    Text("SwiftUI Slots")
+                    Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+                    .font(.system(size: 40))
+                }
+            }
         }
     }
 }
