@@ -15,6 +15,7 @@
 		8F5A5E9424656E41006601E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A5E9224656E41006601E1 /* LaunchScreen.storyboard */; };
 		8F5A5E9F24656E41006601E1 /* Swift_Demo_5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A5E9E24656E41006601E1 /* Swift_Demo_5Tests.swift */; };
 		8F5A5EAA24656E41006601E1 /* Swift_Demo_5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A5EA924656E41006601E1 /* Swift_Demo_5UITests.swift */; };
+		8F5A5EF62466A02C006601E1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A5EF52466A02C006601E1 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8F5A5EA524656E41006601E1 /* Swift Demo 5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Demo 5UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5A5EA924656E41006601E1 /* Swift_Demo_5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Demo_5UITests.swift; sourceTree = "<group>"; };
 		8F5A5EAB24656E41006601E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F5A5EF52466A02C006601E1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				8F5A5E8724656E3F006601E1 /* AppDelegate.swift */,
 				8F5A5E8924656E3F006601E1 /* SceneDelegate.swift */,
 				8F5A5E8B24656E3F006601E1 /* ContentView.swift */,
+				8F5A5EF52466A02C006601E1 /* CardView.swift */,
 				8F5A5E8D24656E41006601E1 /* Assets.xcassets */,
 				8F5A5E9224656E41006601E1 /* LaunchScreen.storyboard */,
 				8F5A5E9524656E41006601E1 /* Info.plist */,
@@ -269,6 +272,7 @@
 			files = (
 				8F5A5E8824656E3F006601E1 /* AppDelegate.swift in Sources */,
 				8F5A5E8A24656E3F006601E1 /* SceneDelegate.swift in Sources */,
+				8F5A5EF62466A02C006601E1 /* CardView.swift in Sources */,
 				8F5A5E8C24656E3F006601E1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
