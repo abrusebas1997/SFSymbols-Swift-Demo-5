@@ -51,26 +51,48 @@ struct ContentView: View {
 //                cards
                 HStack {
                     Spacer()
-                    CardView(symbol: $symbols[numbers[0]])
+                    CardView(symbol: $symbols[numbers[0]], background: $backgrounds[0])
                     
-                    CardView(symbol: $symbols[numbers[1]])
+                    CardView(symbol: $symbols[numbers[1]], background: $backgrounds[1])
                     
-                    CardView(symbol: $symbols[numbers[2]])
+                    
+                    CardView(symbol: $symbols[numbers[2]], background: $backgrounds[2])
             
                     Spacer()
                 }
                 Spacer()
 //                button
                 Button(action: {
+//                    background is white when pictures don't match
+//                    array
+                    
+//                    self.backgrounds = self.backgrounds.map { _ in Color.white
+//                    }
+                    self.backgrounds[0] = Color.white
+                    self.backgrounds[1] = Color.white
+                    self.backgrounds[2] = Color.white
+                    
+//                    change images
                     self.numbers[0] = Int.random(in: 0...self.symbols.count - 1)
                     self.numbers[1] = Int.random(in: 0...self.symbols.count - 1)
                     self.numbers[2] = Int.random(in: 0...self.symbols.count - 1)
+//           array
+//                    self.numbers = self.numbers.map ({ _ in Int.random(in: 0...self.symbols.count - 1)})
                     
 //                    check winnings
                     if self.numbers[0] == self.numbers[1] &&
                         self.numbers[1] == self.numbers[2] {
 //                        won
                         self.credits += self.betAmount * 10
+//                        Update backgrounds to green
+//                        arrays
+//                        self.backgrounds = self.backgrounds.map { _ in Color.green
+//                        }
+                        self.backgrounds[0] = Color.green
+                        self.backgrounds[1] = Color.green
+                        self.backgrounds[2] = Color.green
+                        
+
                     }
                     else {
                         self.credits -= self.betAmount
