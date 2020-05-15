@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var symbols = ["apple", "star", "cherry"]
     @State private var numbers = [1, 2, 0]
+    @State private var backgrounds = [Color.white, Color.white, Color.white]
     @State private var credits = 1000
     @State var betAmount = 5
     

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CardView: View {
     @Binding var symbol:String
+    @Binding var background:Color
     
     var body: some View {
         Image(symbol)
@@ -22,6 +23,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(symbol: Binding.constant("cherry"))
+        CardView(symbol: Binding.constant("cherry"),background: Binding.constant(Color.green))
     }
 }
