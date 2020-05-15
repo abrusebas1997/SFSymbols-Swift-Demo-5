@@ -2,7 +2,7 @@
 Fifth demo for SwiftUi
 
 ### Basic App Walk-through
-![](slotgif.gif)
+![](ezgif.com-video-to-gif.gif)
 
 ### Run Locally
 
