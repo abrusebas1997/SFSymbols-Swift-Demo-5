@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    private var symbols = ["apple", "star", "cherry"]
-    @State private var numbers = [0, 0, 0]
+    @State private var symbols = ["apple", "star", "cherry"]
+    @State private var numbers = [1, 2, 0]
     @State private var credits = 1000
     @State var betAmount = 5
     
@@ -50,11 +50,11 @@ struct ContentView: View {
 //                cards
                 HStack {
                     Spacer()
-                    CardView()
+                    CardView(symbol: $symbols[numbers[0]])
                     
-                    CardView()
+                    CardView(symbol: $symbols[numbers[1]])
                     
-                    CardView()
+                    CardView(symbol: $symbols[numbers[2]])
             
                     Spacer()
                 }
